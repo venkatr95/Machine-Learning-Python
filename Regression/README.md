@@ -39,3 +39,12 @@ Every node (exclude a root) is connected by a directed edge from exactly one oth
 
 Decision tree regression observes features of an object and trains a model in the structure of a tree to predict data in the future to produce meaningful continuous output
 
+
+##### Random Forest Regression
+
+
+A Random Forest is an ensemble technique capable of performing both regression and classification tasks with the use of multiple decision trees and a technique called Bootstrap Aggregation, commonly known as bagging. Bagging involves training each decision tree on a different data sample where sampling is done with replacement
+
+![Random forest](randomforest_regression.png)
+
+The basic idea behind this is to combine multiple decision trees in determining the final output rather than relying on individual decision trees
