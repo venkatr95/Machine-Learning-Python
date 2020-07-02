@@ -16,7 +16,7 @@ X_transform = pca.fit_transform(X_std)
 explained_var = pca.explained_variance_ratio_
 for var in explained_var:
 	print(var)
-	plt.bar([1,2,3,4],explained_var,label=var)
+	plt.bar([PCA1,PCA2,PCA3,PCA4],explained_var,label=var)
 	plt.xlabel("Component #")
 	plt.ylabel("% Variance Contribution")
 	plt.legend()
@@ -37,6 +37,9 @@ for label in labels.values:
 	plt.scatter(pca1[i],pca2[i],color=color_dict[label])
 	i=i+1
 
+plt.title("PCA")
+plt.xlabel("PCA1")
+plt.ylabel("PCA2")
 plt.show()
 
 
